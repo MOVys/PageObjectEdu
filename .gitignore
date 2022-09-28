@@ -1,0 +1,4 @@
+# Created by pytest automatically.
+cat .gitignore
+
+/__pycache__
