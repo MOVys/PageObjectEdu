@@ -3,10 +3,10 @@ class BasePage():
 #добавляем в созданный класс методы
 #метод Конструктор объявляется ключевым словом __init__ вызывается при создании объекта
 #в качестве параметров передаем экземпляр драйвера и url 
-def __init__(self, browser, url):
+    def __init__(self, browser, url):
 #внутри конструктора сохраняем параметры, как аттрибуты класса
-    self.browser = browser
-    self.url = url
+        self.browser = browser
+        self.url = url
 #метод open открывает нужную страницу, использует метод get     
-def open(self):
-    self.browser.get(self.url)
+    def open(self):
+        self.browser.get(self.url)
