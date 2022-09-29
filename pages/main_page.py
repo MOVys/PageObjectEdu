@@ -6,7 +6,8 @@ from .base_page import BasePage
 class MainPage(BasePage):
 #метод для авторизации
     def go_to_login_page(self):
-#Так как браузер хранится как аргумент класса BasePage, обращаться к нему нужно соответствующим образом с помощью self
-       login_link = self.browser.find_element(By.CSS_SELECTOR, "#login_link")
-       login_link.click() 
-       
+        #Так как браузер хранится как аргумент класса BasePage, обращаться к нему нужно соответствующим образом с помощью self
+        login_link = self.browser.find_element(By.CSS_SELECTOR, "#login_link")
+        login_link.click() 
+    def should_be_login_link(self):
+        assert self.browser.find_element(By.CSS_SELECTOR, "#login_link"),"Login link is not presented"    
